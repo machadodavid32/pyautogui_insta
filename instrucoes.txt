@@ -1,0 +1,31 @@
+1 - Primeiro, faça a instalação do pyautogui no terminal do windoes digitando pip install pyautogui
+
+2 - Encontrando  Y e X -Acesse o pyautogui digitando no terminal do windows python + enter. Depois digite:
+import pyautogui
+pyautogui.position()
+
+Porém, existe um modo mais eficiente e que vamos usar mais vezes:
+
+pyautogui.displayMousePosition()
+
+
+3 - mouseinfo - A maneira mais eficiente. No terminal do windows, digite pip install mouseinfo.
+Depois de instalado, no terminal:
+python
+>>> from mouseinfo import mouseInfo + enter
+>>> mouseInfo()
+Depois abrirá uma ferramenta na tela onde podemos copiar e colar as referências para construção da nossa automação.
+Com o botão F6 você marca as coordenadas que precisará.
+Dica: no mouseInfo desmarque a 3 sec delay
+
+
+Obs: Crtl + C para o programa e ctrl + z sai do python no terminal
+
+
+git merge + nome do branch  - neste caso, se vc estiver na branch principal, as modificações feitas na outra branch se juntarão
+a principal
+
+
+git pull origin nome_da_branch - vai permitir atualizar o arquivo do pc direto da branch do github
+
+git pull origin nome_da_branch --allow-unrelated-histories - vai desbloquear para que o github merge as branchs
