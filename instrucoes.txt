@@ -20,3 +20,12 @@ Dica: no mouseInfo desmarque a 3 sec delay
 
 
 Obs: Crtl + C para o programa e ctrl + z sai do python no terminal
+
+
+git merge + nome do branch  - neste caso, se vc estiver na branch principal, as modificações feitas na outra branch se juntarão
+a principal
+
+
+git pull origin nome_da_branch - vai permitir atualizar o arquivo do pc direto da branch do github
+
+git pull origin nome_da_branch --allow-unrelated-histories - vai desbloquear para que o github merge as branchs
