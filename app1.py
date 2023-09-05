@@ -44,14 +44,18 @@ while True:
         sleep(2)
         
         # Trocar de conta
+        pyautogui.click(1323,693, duration=1) # vai clicar mais abaixo para aumentar compatibilidade
         pyautogui.click(1245,627, duration=2)
-        
+        sleep(2)
         # login
-        pyautogui.click(1033,361, duration=2)
+        
+        pyautogui.click(1033,361, duration=1)
+        pyautogui.click(1162,342, duration=1)
         pyautogui.typewrite(usuario)
         sleep(2)
         
         # Clique fora - eviar inf pra guardar nome de usuario pelo browser
+        pyautogui.click(1391,314, duration=1)
         pyautogui.click(1388,371, duration=1)
         sleep(2)
        
@@ -70,7 +74,14 @@ while True:
         sleep(3)
         
         # FUNCIONANDO ATE ESTA LINHA
+
         
+        
+        # Clicando em uma publicação
+        pyautogui.click(279,339, duration=1)
+        
+        
+        # Verificando se o login deu cero
         casa = pyautogui.locateCenterOnScreen('casa.png')
         casa_escura = pyautogui.locateCenterOnScreen('casa_escura.png')
         if casa or casa_escura is None:
@@ -82,13 +93,16 @@ while True:
             pyautogui.click(1044,613, duration=1)
         
             # 2 - clicar em pesquisar
-            pyautogui.click(54,282,duration=1.5)
+            pyautogui.click(185,319, duration=1)
             sleep(1)
+            pyautogui.click(293,226, duration=1) # segunda tela de pesquisa
+            sleep(2)
+            
             # Escrevendo o que pesquisar
             pyautogui.typewrite(pesquisa)
             
             # Clicando no resultado da pesquisa
-            pyautogui.click(243,311, duration=1)
+            pyautogui.click(279,339, duration=1)
             sleep(1)
             
             
@@ -105,7 +119,7 @@ while True:
             sleep(2)
             
         
-            # 10 - Verificar se já curti ou não aquela postagem
+            # 10 - Verificar se já curtiu ou não aquela postagem
             coracao = pyautogui.locateCenterOnScreen('coracao.png')
             sleep(1)
             # 11 - Se já tiver curtido, fazer nada, e pausar o bot por 24 horas
