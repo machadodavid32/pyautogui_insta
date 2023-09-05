@@ -40,6 +40,7 @@ while True:
         
         sleep(3)
         
+        
         webbrowser.open_new_tab('https://www.instagram.com')
         sleep(2)
         
@@ -73,18 +74,12 @@ while True:
         pyautogui.click(1051,593, duration=1)
         sleep(3)
         
-        # FUNCIONANDO ATE ESTA LINHA
+        
 
         
-        
-        # Clicando em uma publicação
-        pyautogui.click(279,339, duration=1)
-        
-        
         # Verificando se o login deu cero
-        casa = pyautogui.locateCenterOnScreen('casa.png')
-        casa_escura = pyautogui.locateCenterOnScreen('casa_escura.png')
-        if casa or casa_escura is None:
+        pesq = pyautogui.locateCenterOnScreen('pesquisa.png')
+        if pesq is None:
             print('Usuário ou senha incorretos.')
         
         else:    
@@ -162,6 +157,6 @@ while True:
                 # Deslogar
                 pyautogui.click(46,922, duration=2)
                 sleep(1)
-                break
+               
             
     
