@@ -4,6 +4,7 @@ import webbrowser
 import pyautogui
 from time import sleep
 from threading import Thread
+from utilities.functions import trocar_conta, clique_fora
 
 sg.theme('LightBrown')
 
@@ -44,34 +45,35 @@ while True:
         webbrowser.open_new_tab('https://www.instagram.com')
         sleep(2)
         
-        # Trocar de conta
-        pyautogui.click(1323,693, duration=1) # vai clicar mais abaixo para aumentar compatibilidade
-        pyautogui.click(1245,627, duration=2)
-        sleep(2)
+        trocar_conta()
+
         # login
-        
-        pyautogui.click(1033,361, duration=1)
-        pyautogui.click(1162,342, duration=1)
+        pyautogui.click(1076,360, duration=2)
+        #pyautogui.click(1162,342, duration=2)
         pyautogui.typewrite(usuario)
         sleep(2)
         
+        clique_fora()
+        
+        """
         # Clique fora - eviar inf pra guardar nome de usuario pelo browser
-        pyautogui.click(1391,314, duration=1)
-        pyautogui.click(1388,371, duration=1)
+        pyautogui.click(1391,314, duration=2)
+        pyautogui.click(1388,371, duration=2)
         sleep(2)
+       """
        
         # Senha
-        pyautogui.click(1072,402, duration=2)
+        pyautogui.click(1066,414, duration=2)
         pyautogui.typewrite(senha)
         sleep(2)
     
         
         # Entrar
-        pyautogui.click(1114,446, duration=1)
+        pyautogui.click(1114,446, duration=2)
         sleep(5)
         
         # Evitar inf salvar login
-        pyautogui.click(1051,593, duration=1)
+        pyautogui.click(1051,593, duration=2)
         sleep(3)
         
         
